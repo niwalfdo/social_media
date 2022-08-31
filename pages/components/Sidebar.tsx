@@ -6,6 +6,7 @@ import {
     BookmarkIcon,
     // CollectionIcon,
     QueueListIcon,
+    EllipsisHorizontalCircleIcon,
     // DotsCircleHorizontalIcon,
     // MailIcon,
     EnvelopeIcon,
@@ -14,17 +15,19 @@ import {
 } from '@heroicons/react/24/outline'
 import SidebarRow from './SidebarRow'
 
-
 function Sidebar() {
   return (
     <div>  
-        <img className='h-10 w-10' src='https://about.twitter.com/content/dam/about-twitter/en/brand-toolkit/brand-download-img-1.jpg.twimg.1920.jpg' alt='logo'/>
+        {/* <img className='h-10 w-10' src={'images/logo.webp'} alt='logo' /> */}
+        <img className='h-10 w-10' src={'images/tw_logo.png'} alt='logo' />
         <SidebarRow Icon={HomeIcon} title='Home' />
         <SidebarRow Icon={HashtagIcon} title='Explore' />
         <SidebarRow Icon={BellIcon} title='Notifications' />
         <SidebarRow Icon={EnvelopeIcon} title='Messages' />
         <SidebarRow Icon={BookmarkIcon} title='Bookmarks' />
         <SidebarRow Icon={QueueListIcon} title='List' />
+        <SidebarRow Icon={UserIcon} title='Sign In' />
+        <SidebarRow Icon={EllipsisHorizontalCircleIcon} title='More' />
     </div>
   )
 }
