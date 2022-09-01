@@ -17,7 +17,7 @@ import SidebarRow from './SidebarRow'
 
 function Sidebar() {
   return (
-    <div>  
+    <div className='col-span-2 flex flex-col'>  
         {/* <img className='h-10 w-10' src={'images/logo.webp'} alt='logo' /> */}
         <img className='h-10 w-10' src={'images/tw_logo.png'} alt='logo' />
         <SidebarRow Icon={HomeIcon} title='Home' />
